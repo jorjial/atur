@@ -57,7 +57,7 @@ shinyUI(fluidPage(
     ),
     
     mainPanel(
-      h4("Percentatges de persones aturades potencialment actives per municipi"),
+      h4("Percentatges de persones aturades sobre la població potencialment actives per municipi"),
 
       plotOutput("mapPercentage"),
       
