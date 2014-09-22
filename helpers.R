@@ -5,6 +5,8 @@ plotMunicipi <- function(atur, municipi1, municipi2, municipi3, municipi4, munic
 
   percentMunicipal = data.frame(stringsAsFactors=F)
   
+  years = seq(1996, 2012)
+  
   for(municipi in c(municipi1, municipi2, municipi3, municipi4, municipi5)){
     for(year in years){
       year = as.character(year)
@@ -44,7 +46,7 @@ plotMapa <- function(year, atur){
     sub_gadm$provsColorLevel = atur$data[[year]]$provsColorLevel
     sub_gadm$provsValueLevel = atur$data[[year]]$provsValueLevel
     
-    finalColors = colorPalette[match(levels(sub_gadm$provsValueLevel), legend)]
+    finalColors = atur$pal[match(levels(sub_gadm$provsValueLevel), legend)]
     
     p <- spplot(sub_gadm, "provsValueLevel", col.regions = finalColors,
                 col = "white",
