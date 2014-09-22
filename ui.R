@@ -4,7 +4,7 @@ atur <- readRDS("data/atur.rds")
 
 shinyUI(fluidPage(
   
-  titlePanel("Evolució de l'atur al país valencià desde del 1996 fins el 2012"),
+  titlePanel("Evolució de l'atur al País Valencià des del 1996 fins el 2012"),
   
   sidebarLayout(
     sidebarPanel(
