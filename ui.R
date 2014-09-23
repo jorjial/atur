@@ -51,8 +51,9 @@ shinyUI(fluidPage(
     
     h6("Font: ", a("la caixa", href="http://www.anuarieco.lacaixa.comunicacions.com/java/X?cgi=caixa.le_DEM.pattern&START=YES/")),
     
-    h6("Autor: ", a("@jorjial", href="https://www.twitter.com/jorjial"))
+    h6("Autor: ", a("@jorjial", href="https://www.twitter.com/jorjial")),
     
+    h6("Codig font: ", a("atur", href="https://github.com/jorjial/atur"))
     
     ),
     
