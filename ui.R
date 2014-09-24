@@ -11,7 +11,8 @@ shinyUI(fluidPage(
 
     h4("Selecciona l'any per al mapa del país"),  
     
-    sliderInput("year", label = "", min = 1996, max = 2012, value = 2008),
+    sliderInput("year", label = "", width = "80%",
+                min = 1996, max = 2012, value = 2008),
     
     hr(),
     br(),
@@ -53,7 +54,7 @@ shinyUI(fluidPage(
     
     h6("Autor: ", a("@jorjial", href="https://www.twitter.com/jorjial")),
     
-    h6("Codig font: ", a("atur", href="https://github.com/jorjial/atur"))
+    h6("Codi font: ", a("atur", href="https://github.com/jorjial/atur"))
     
     ),
     
